@@ -3,8 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>Cybersecurity Innovations</title>
     <style>
+        nav .container-fluid  #navbarSupportedContent #navlinks   {
+            font-size: x-large; 
+            margin-right: 10px;
+            color: #ffffff;
+          }
+          nav .container-fluid  #navbarSupportedContent .dropdown-menu .dropdown-item   {
+            font-size: x-large; 
+            margin-right: 10px;
+          }    
+       
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -13,25 +26,14 @@
             color: #eaeaea;
         }
 
-        header {
-            background-color: #4c4cff;
-            color: white;
-            padding: 2rem;
-            text-align: center;
-        }
-
+ 
         nav {
             background-color: #333;
             padding: 1rem;
             text-align: center;
         }
 
-        nav a {
-            color: #bbb;
-            margin: 0 1.5rem;
-            text-decoration: none;
-            font-size: 1.1rem;
-        }
+
 
         nav a:hover {
             color: white;
@@ -105,19 +107,78 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>Cybersecurity Innovations</h1>
-        <p>Pioneering technologies to safeguard the digital world.</p>
-    </header>
 
-    <nav>
-        <a href="#overview">Overview</a>
-        <a href="#resources">Resources</a>
-        <a href="#contact">Contact Us</a>
-    </nav>
-
+    <nav class="navbar navbar-expand-xxl bg-body-tertia " >
+        
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="icon.ico" alt="" srcset="" width="60px" height="60px" style="margin-right: 200px;"></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+              <li class="nav-item">
+                <a class="nav-link active" id="navlinks"  aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown ">
+                <a
+                class="nav-link active dropdown-toggle" id="navlinks"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >
+                Catagories
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Mohamed Nabil/Islamicbooks.html">Islamic Books</a></li>
+                <li><a class="dropdown-item" href="Hosni Abdel Aati/softwarebooks.html"  >software Books</a></li>
+                <li><a class="dropdown-item" href="Omar Ibrahim/NetworkSecuritybooks.html" >Network Security Books</a></li>
+                <li><a class="dropdown-item" href="Ahmed Abdel Aziz/Historybooks.html" >History Books</a></li>
+              </ul>
+              
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="ahmed gmal/plans.html"  id="navlinks">Membership</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Fatima/aboutus.html"  id="navlinks" >About us</a>
+                    
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="ziad mohamed/contact.html"   id="navlinks" >Contact us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="Hassan Saed/login.html" id="navlinks" >Login</a>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Mohammed Mahdi/register.html"  id="navlinks" >Register</a>
+              </li>
+            </ul>
+            <form class="d-flex " role="search" style="margin-bottom: 10px;">
+              <input
+                class="form-control me-2 border-dark"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button      class="btn btn-outline-light border-dark bg-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+  
     <div class="hero-section">
-        <h1>Empowering a Secure Future</h1>
+        <h1>Network Security Books</h1>
     </div>
 
     <div class="content" id="overview">
@@ -125,77 +186,145 @@
         <p>Cybersecurity is critical in protecting information systems, networks, and data from malicious attacks. Our library brings together top resources and tools to help you stay ahead in this field.</p>
     </div>
 
-    <div class="content" id="resources">
+    <div class="content" id="resources" >
         <h2>Featured Resources</h2>
         <div class="grid-container">
-            <div class="card">
+            <div class="card" >
                 <h3>"Hacking: The Art of Exploitation"</h3>
-                <p>A comprehensive guide to hacking techniques and methodologies.</p>
-                <a href="https://drive.google.com/file/d/0B_W9_a81wlaDU0Izd0p1R0VEbEU/view?pli=1&resourcekey=0-9d-syNjrrcmAddq3JX2sig" target="_blank">
+                <a href="infobook1.html" target="_blank">
                     <img src="img\content.jpg" alt="Hacking: The Art of Exploitation Cover">
                 </a>
             </div>
+
             <div class="card">
-                <h3>Cyber Threat Analysis</h3>
-                <p>An insightful report on modern cybersecurity challenges.</p>
-                <a href="https://www.lockheedmartin.com/content/dam/lockheed-martin/rms/documents/cyber/LM-White-Paper-Threat-Driven-Approach.pdf" target="_blank">
-                    <img src="img\download.jpg" alt="Cyber Threat Analysis Cover">
-                </a>
-            </div>
-            <div class="card">
-                <h3>Network Security Essentials</h3>
-                <p>A fundamental book for network security, including topics such as cryptography, firewall protection, and network security protocols.</p>
+                <h3>"Network Security Essentials"</h3>
+
                 <a href="https://api.pageplace.de/preview/DT0400.9781292154916_A37747529/preview-9781292154916_A37747529.pdf" target="_blank">
                     <img src="img\3.jpg" alt="Network Security Tools Cover">
                 </a>
             </div>
             <div class="card">
-                <h3>Cybersecurity Essentials</h3>
-                <p>A beginner-friendly guide to understanding the basics of cybersecurity.</p>
+                <h3>"Cybersecurity Essentials"</h3>
+
                 <a href="https://www.jre-training.com/WebSecurity/Cybersecurity.pdf" target="_blank">
                     <img src="img\cover_image.jpg" alt="Cybersecurity Essentials Cover">
                 </a>
             </div>
             <div class="card">
-                <h3>Advanced Cryptography</h3>
-                <p>Dive deep into cryptographic methods and their applications.</p>
+                <h3>"Advanced Cryptography"</h3>
+
                 <a href="https://crypto.stanford.edu/~dabo/cryptobook/BonehShoup_0_4.pdf" target="_blank">
                     <img src="img\Capture.PNG" alt="Advanced Cryptography Cover">
                 </a>
             </div>
             <div class="card">
-                <h3>The Cybersecurity Bible"</h3>
-                <p>Comprehensive and beginner-friendly, this book covers everything from basic concepts to advanced topics, ideal for those new to the field.</p>
+                <h3>"The Cybersecurity Bible"</h3>
+
                 <a href="https://theswissbay.ch/pdf/Gentoomen%20Library/Networking/Network%20Security%20Bible%202005.pdf" target="_blank">
                     <img src="img\2.jpg" alt="Cyber Threat Analysis Cover">
                 </a>
             </div>
             <div class="card">
-                <h3>The Art of Computer Security</h3>
-                <p>A deeper dive into computer security, providing a foundation in understanding security models, policies, and techniques.</p>
+                <h3>"The Art of Computer Security"</h3>
+
                 <a href="https://ptgmedia.pearsoncmg.com/images/9780321712332/samplepages/9780321712332_Sample.pdf" target="_blank">
                     <img src="img\4.jpg" alt="Cyber Threat Analysis Cover">
                 </a>
             </div>
             <div class="card">
-                <h3>Cybersecurity and Cyberwar</h3>
-                <p>This book is great for anyone wanting a broader view of how cybersecurity impacts modern society and the world of warfare.</p>
+                <h3>"Cybersecurity and Cyberwar"</h3>
+
                 <a href="https://api.pageplace.de/preview/DT0400.9780199918102_A23618218/preview-9780199918102_A23618218.pdf" target="_blank">
                     <img src="img\5.jpg" alt="Cyber Threat Analysis Cover">
                 </a>
             </div>
             <div class="card">
-                <h3>Metasploit: The Penetration Tester’s Guide</h3>
-                <p>A practical guide to using the Metasploit framework for penetration testing, ideal for anyone looking to enhance their ethical hacking skills..</p>
+                <h3>"Metasploit: The Penetration Tester’s Guide"</h3>
+
                 <a href="https://olinux.net/wp-content/uploads/2019/01/Metasploit-The-Penetration-Tester-s-Guide.pdf" target="_blank">
                     <img src="img\6.jpg" alt="Cyber Threat Analysis Cover">
                 </a>
             </div>
+            <div class="card">
+                <h3>"A Threat-Driven Approach to Cyber
+                    Security "</h3>
+                <a href="https://www.lockheedmartin.com/content/dam/lockheed-martin/rms/documents/cyber/LM-White-Paper-Threat-Driven-Approach.pdf" target="_blank">
+                    <img src="img\download.jpg" alt="Cyber Threat Analysis Cover">
+                </a>
+            </div>            
         </div>
     </div>
 
-    <footer>
-        <p>&copy; 2024 Cybersecurity Innovations | All rights reserved.</p>
-    </footer>
+    <footer class="bg-dark text-white text-center text-lg-start">
+        <div class="container p-4">
+          <div class="row">
+            <!-- عمود اللوجو والنص -->
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0 text-start">
+              <h5 class="text-uppercase">
+                <img src="icon.ico" alt="Library Logo" width="90" class="me-2">
+                BATU Library
+              </h5>
+              <p>
+                <blockquote>
+                  "Libraries store the energy that fuels the imagination. They open up windows to the world and inspire us to explore, achieve, and contribute to improving our quality of life." 
+                  <br>— Sidney Sheldon
+                </blockquote>
+              </p>
+            </div>
+      
+            <!-- عمود الروابط -->
+            <div class="col-lg-6 col-md-12">
+              <div class="row">
+                <!-- العمود الأول -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <h5 class="text-uppercase">Links</h5>
+                  <ul class="list-unstyled">
+                    <li class="mb-2">
+                      <a href="index.html" class="text-white text-decoration-none">Home</a>
+                    </li>
+                    <li class="mb-2">
+                      <a href="Mohamed Mahdi/register.html" class="text-white text-decoration-none">register</a>
+                    </li>
+                    <li class="mb-2">
+                      <a href="Hassan Saed/login.html" class="text-white text-decoration-none">Login</a>
+                    </li>
+                    <li class="mb-2">
+                      <a href="Fatima/aboutus.html" class="text-white text-decoration-none">About us</a>
+                    </li>
+                    <li class="mb-2">
+                    <a href="ziad mohamed/contact.html" class="text-white text-decoration-none">Contact us</a>
+                  </li>
+                  </ul>
+                </div>
+      
+                <!-- العمود الثاني -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <h5 class="text-uppercase">More Links</h5>
+                  <ul class="list-unstyled">
+                    <li class="mb-2">
+                      <a href="Doha/forgotpassword.html" class="text-white text-decoration-none">Forgot password</a>
+                    </li>
+                    <li class="mb-2">
+                      <a href="Ahmed Abdel Rahim/faq.html" class="text-white text-decoration-none">FAQ</a>
+                    </li>
+                    <li class="mb-2">
+                      <a href="Mahmoud Ahmed Mahmoud/privacypolicy.html" class="text-white text-decoration-none">privacy policy</a>
+                    </li>
+                  </ul>
+                </div>
+      
+          
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="  text-center p-3 " >
+          © 2024 Copyright:
+          <a class="text-white text-decoration-none" href="#"> BATU Library.com</a>
+        </div>
+      </footer> 
 </body>
 </html>
